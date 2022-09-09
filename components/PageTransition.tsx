@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react'
 import { useRouter } from 'next/router'
 
 import { gsap } from 'gsap'
-import ScrollCancel from '../utils/ScrollCancel'
+import ScrollCancel from './util/ScrollCancel'
 
 type Props = {
     setPageTransitioning: (value: boolean) => void

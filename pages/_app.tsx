@@ -5,7 +5,7 @@ import { useRouter } from 'next/router'
 import Script from 'next/script'
 import Head from 'next/head'
 import { GoogleReCaptchaProvider } from "react-google-recaptcha-v3";
-import * as gtag from '../libs/GTM'
+import * as gtag from '@/components/util/GTM'
 import Layout from '@/layouts/Layout'
 import '@/styles/global.scss'
 import '@/styles/layout.scss'
@@ -37,7 +37,6 @@ function MyApp({ Component, pageProps }: AppProps) {
     }, [router.events])
     return (
         <>
-            {/* Global Site Tag (gtag.js) - Google Analytics */}
             <Script
                 strategy='afterInteractive'
                 src={`https://www.googletagmanager.com/gtag/js?id=${gtag.GTM_ID}`}

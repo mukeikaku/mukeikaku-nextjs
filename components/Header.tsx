@@ -4,7 +4,7 @@ import { useRouter } from 'next/router'
 
 import SVGSprite from './util/SVGSprite'
 import Hamburger from './parts/Hamburger'
-import ScrollCancel from '../utils/ScrollCancel'
+import ScrollCancel from './util/ScrollCancel'
 import HeaderMenu from './parts/HeaderMenu'
 
 export default function Header() {
